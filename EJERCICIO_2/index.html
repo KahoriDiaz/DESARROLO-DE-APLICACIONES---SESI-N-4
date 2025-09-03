@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌡️ Conversor de Temperatura</h1>
+        
+        <div class="input-group">
+            <label for="temperatura">Ingresa la temperatura:</label>
+            <input type="number" id="temperatura" placeholder="Ejemplo: 25">
+        </div>
+
+        <div class="input-group">
+            <label for="escala">Selecciona la escala:</label>
+            <select id="escala">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+            </select>
+        </div>
+
+        <button onclick="convertir()">Convertir</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
